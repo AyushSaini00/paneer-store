@@ -1,0 +1,24 @@
+{
+  "name": "paneer-store",
+  "version": "0.1.0",
+  "description": "An online food delivery app for Paneer dishes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyushSaini00/paneer-store.git"
+  },
+  "keywords": [
+    "paneer",
+    "store",
+    "food-delivery"
+  ],
+  "author": "Ayush Saini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AyushSaini00/paneer-store/issues"
+  },
+  "homepage": "https://github.com/AyushSaini00/paneer-store#readme"
+}
