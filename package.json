@@ -20,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/AyushSaini00/paneer-store/issues"
   },
-  "homepage": "https://github.com/AyushSaini00/paneer-store#readme"
+  "homepage": "https://github.com/AyushSaini00/paneer-store#readme",
+  "devDependencies": {
+    "prettier": "^2.3.2",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "prettier": {
+    "semi": true,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "none"
+  }
 }
