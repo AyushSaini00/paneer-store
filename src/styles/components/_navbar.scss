@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+
+  .logo-link {
+    margin-right: 1rem;
+  }
+  .logo {
+    max-width: 12rem;
+    max-height: 2.5rem;
+    flex: 1;
+  }
+  .logo-secondary {
+    max-width: 2.5rem;
+  }
+  form {
+    display: flex;
+    flex: 2;
+    max-width: 32rem;
+    margin-right: 1rem;
+
+    input {
+      padding: 0.625rem 0.5rem;
+      width: 100%;
+      min-width: 15rem;
+      font-size: 1rem;
+      margin-right: 1rem;
+    }
+    button {
+      padding: 0.625rem 0.5rem;
+      font-size: 1rem;
+      background: #e86b6b;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+  .btn-container {
+    display: flex;
+    button {
+      margin-right: 1rem;
+    }
+  }
+}

@@ -1,3 +1,5 @@
+@use './abstract/reset';
+@use './components/navbar';
 @import url('https://fonts.googleapis.com/css2?family=Glory:wght@400;600;700&display=swap');
 html {
   box-sizing: border-box;
@@ -16,14 +18,9 @@ body {
   line-height: 1.5;
   font-family: 'Glory', 'Open Sans', 'Helvetica Neue', sans-serif;
   background: #f7faf8;
+  padding: 1rem;
 }
 .responsive {
   width: 100%;
   height: auto;
-}
-.logo {
-  max-width: 12rem;
-}
-logo-favourite {
-  max-width: 2rem;
 }

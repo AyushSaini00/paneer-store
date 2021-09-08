@@ -8,7 +8,7 @@
   </head>
   <body>
     <nav>
-      <a href="#">
+      <a href="#" class="logo-link">
         <img class="logo responsive" src="./assets/logo.svg" alt="logo" />
       </a>
       <form>
@@ -18,16 +18,24 @@
           placeholder="Search for a paneer dish"
           aria-label="Search for a paneer dish"
         />
-        <button>Find</button>
+        <button id="search">Search</button>
       </form>
-      <button>Card</button>
-      <button>
-        <img
-          class="logo-favourite responsive"
-          src="./assets/heart.svg"
-          alt="favourites"
-        />
-      </button>
+      <div class="btn-container">
+        <button id="add-to-cart">
+          <img
+            class="logo-secondary responsive"
+            src="./assets/cart.svg"
+            alt="add to cart"
+          />
+        </button>
+        <button id="add-to-favourites">
+          <img
+            class="logo-secondary responsive"
+            src="./assets/heart.svg"
+            alt="add to favourites"
+          />
+        </button>
+      </div>
     </nav>
 
     <main>
