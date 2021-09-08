@@ -1,11 +1,12 @@
 {
   "name": "paneer-store",
   "version": "0.1.0",
-  "description": "An online food delivery app for Paneer dishes",
+  "description": "An online food ordering app for Paneer dishes",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack --config webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -14,7 +15,7 @@
   "keywords": [
     "paneer",
     "store",
-    "food-delivery"
+    "food-ordering"
   ],
   "author": "Ayush Saini",
   "license": "MIT",
@@ -24,9 +25,12 @@
   "homepage": "https://github.com/AyushSaini00/paneer-store#readme",
   "devDependencies": {
     "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
-    "node-sass": "^6.0.1",
+    "mini-css-extract-plugin": "^2.2.2",
     "prettier": "^2.3.2",
+    "sass": "^1.39.0",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "webpack": "^5.52.0",
