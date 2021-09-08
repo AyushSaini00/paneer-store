@@ -1,5 +1,6 @@
 @use './abstracts/reset';
 @use './components/navbar';
+@use './components/card';
 @import url('https://fonts.googleapis.com/css2?family=Glory:wght@400;600;700&display=swap');
 html {
   box-sizing: border-box;
@@ -23,4 +24,12 @@ body {
 .responsive {
   width: 100%;
   height: auto;
+}
+main {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
