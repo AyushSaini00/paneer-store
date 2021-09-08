@@ -21,40 +21,46 @@
         <button id="search">Search</button>
       </form>
       <div class="btn-container">
-        <button id="add-to-cart">
+        <button id="cart">
           <img
             class="logo-secondary responsive"
             src="./assets/cart.svg"
-            alt="add to cart"
+            alt="cart"
           />
         </button>
-        <button id="add-to-favourites">
+        <button id="all-favourites">
           <img
             class="logo-secondary responsive"
             src="./assets/heart.svg"
-            alt="add to favourites"
+            alt="all favourites"
           />
         </button>
       </div>
     </nav>
 
     <main>
+      <h1>Our Menu</h1>
       <div class="container">
-        <div class="card">
-          <!-- <img
+        <section class="card">
+          <img
+            class="card-image responsive"
             src="https://raw.githubusercontent.com/AyushSaini00/paneer-store-api/main/assets/aloo-pyaz-paneer.jpg?token=AO2IQVWPAYBEWDQAXDM5TO3BIGIPA"
             alt="chilli paneer"
-          /> -->
-          <h2 class="dish-name">Palak Paneer</h2>
-          <p class="dish-description">
-            Soft cottage cheese cubes prepared in mild spiced smooth spinach
-            sauce.
-          </p>
-          <div class="dish-rating">4.3</div>
-          <div class="dish-price">180</div>
-          <button>🧡</button>
-          <button>Add</button>
-        </div>
+          />
+          <div class="card-text">
+            <h2 class="dish-name">Palak Paneer</h2>
+            <p class="dish-description">
+              Soft cottage cheese cubes prepared in mild spiced smooth spinach
+              sauce.
+            </p>
+            <div class="dish-details">
+              <div class="dish-rating">⭐ 4.3</div>
+              <div class="dish-price">₹ 180</div>
+              <button class="add-to-favourite">🧡</button>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   </body>
