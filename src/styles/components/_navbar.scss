@@ -1,32 +1,29 @@
+@use '../abstracts/mixins';
+
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
+  flex-direction: column;
+  position: relative;
 
   .logo-link {
-    margin-right: 1rem;
+    max-width: 12rem;
   }
   .logo {
     max-width: 12rem;
     max-height: 2.5rem;
-    flex: 1;
   }
   .logo-secondary {
     max-width: 2.5rem;
   }
   form {
     display: flex;
-    flex: 2;
-    max-width: 32rem;
-    margin-right: 1rem;
+    margin: 1rem 0;
 
     input {
       padding: 0.625rem 0.5rem;
       width: 100%;
       min-width: 15rem;
       font-size: 1rem;
-      margin-right: 1rem;
     }
     button {
       padding: 0.625rem 0.5rem;
@@ -38,8 +35,44 @@ nav {
   }
   .btn-container {
     display: flex;
+    margin: 0.5rem 0;
+    position: absolute;
+    top: -8px;
+    right: 0;
+
     button {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+@include mixins.tablet() {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+    .logo-link {
       margin-right: 1rem;
+    }
+    .logo {
+      flex: 1;
+    }
+    form {
+      flex: 2;
+      max-width: 35rem;
+      margin-right: 1rem;
+
+      input {
+        margin-right: 1rem;
+      }
+    }
+    .btn-container {
+      position: initial;
+      button {
+        margin-right: 1rem;
+      }
     }
   }
 }
