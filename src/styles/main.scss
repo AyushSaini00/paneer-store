@@ -1,4 +1,29 @@
-$bg: rgb(221, 4, 76);
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@400;600;700&display=swap');
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  background-color: $bg;
+  line-height: 1.5;
+  font-family: 'Glory', 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #f7faf8;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.logo {
+  max-width: 12rem;
+}
+logo-favourite {
+  max-width: 2rem;
 }
