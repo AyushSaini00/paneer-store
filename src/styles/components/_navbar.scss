@@ -4,6 +4,8 @@ nav {
   display: flex;
   flex-direction: column;
   position: relative;
+  max-width: 75rem;
+  margin: 0 auto;
 
   .logo-link {
     max-width: 12rem;
