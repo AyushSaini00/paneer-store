@@ -2,6 +2,7 @@
 
 .card {
   margin: 1rem 0;
+  width: 100%;
 
   .card-image {
     width: 8.125rem;
@@ -10,6 +11,7 @@
   .dish-details {
     display: flex;
     margin: 0.5rem 0;
+    align-items: center;
   }
   .dish-details > * {
     margin-right: 1rem;
@@ -25,7 +27,8 @@
 @include mixins.tablet() {
   .card {
     display: flex;
-    max-width: 32rem;
+    max-width: 30rem;
+    margin: 1rem;
 
     .card-image {
       margin-right: 2rem;
