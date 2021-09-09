@@ -12,8 +12,8 @@ const state = {};
 const controlSearch = async () => {
   const query = searchView.getInput();
   if (query) {
-    // create 4 skeletaon cards
-    renderSkeletonCards([1, 2, 3, 4]);
+    // create 6 skeletaon cards
+    renderSkeletonCards([1, 2, 3, 4, 5, 6]);
 
     const res = await Search(query);
     state.searchResults = res;
