@@ -1,4 +1,6 @@
 @use '../abstracts/mixins';
+$anim: shimmer 3s ease-out infinite;
+$lightgray: lightgray;
 
 .skeleton-card {
   margin: 1rem 0;
@@ -7,14 +9,16 @@
   .skeleton-card-image {
     width: 8.125rem;
     height: 8.125rem;
-    background: lightgray;
+    background: $lightgray;
     margin-bottom: 0.5rem;
+    animation: $anim;
   }
 
   .skeleton-content {
     & > div {
-      background: lightgray;
+      background: $lightgray;
       margin-bottom: 0.5rem;
+      animation: $anim;
     }
 
     .skeleton-title {
@@ -41,5 +45,11 @@
     .skeleton-card-image {
       margin-right: 2rem;
     }
+  }
+}
+
+@keyframes shimmer {
+  to {
+    background: linear-gradient(45deg, $lightgray, transparent);
   }
 }
