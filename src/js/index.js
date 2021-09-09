@@ -2,6 +2,7 @@ import '../styles/main.scss';
 import Search from './modals/Search';
 import { elements } from './views/domElements';
 import * as searchView from './views/searchView';
+import { renderSkeletonCards, clearSkeletonCards } from './views/skeletonCard';
 
 // global app state
 const state = {};
@@ -11,11 +12,16 @@ const state = {};
 const controlSearch = async () => {
   const query = searchView.getInput();
   if (query) {
+    // create 4 skeletaon cards
+    renderSkeletonCards([1, 2, 3, 4]);
+
     const res = await Search(query);
     state.searchResults = res;
 
     searchView.clearInput();
     searchView.clearDishes();
+
+    clearSkeletonCards();
 
     searchView.renderDishes(state.searchResults);
   }

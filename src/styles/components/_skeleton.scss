@@ -1,0 +1,45 @@
+@use '../abstracts/mixins';
+
+.skeleton-card {
+  margin: 1rem 0;
+  width: 100%;
+
+  .skeleton-card-image {
+    width: 8.125rem;
+    height: 8.125rem;
+    background: lightgray;
+    margin-bottom: 0.5rem;
+  }
+
+  .skeleton-content {
+    & > div {
+      background: lightgray;
+      margin-bottom: 0.5rem;
+    }
+
+    .skeleton-title {
+      width: 10rem;
+      height: 1.5rem;
+    }
+    .skeleton-description {
+      width: 20rem;
+      height: 1rem;
+    }
+    .skeleton-details {
+      width: 15rem;
+      height: 1rem;
+    }
+  }
+}
+
+@include mixins.tablet() {
+  .skeleton-card {
+    max-width: 30rem;
+    margin: 1rem;
+    display: flex;
+
+    .skeleton-card-image {
+      margin-right: 2rem;
+    }
+  }
+}
