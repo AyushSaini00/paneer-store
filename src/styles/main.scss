@@ -1,7 +1,9 @@
 @use './abstracts/reset';
 @use './components/navbar';
+@use './components/sort';
 @use './components/card';
 @use './components/skeleton';
+@import './abstracts/variables';
 @import url('https://fonts.googleapis.com/css2?family=Glory:wght@400;600;700&display=swap');
 html {
   box-sizing: border-box;
@@ -19,7 +21,7 @@ html {
 body {
   line-height: 1.5;
   font-family: 'Glory', 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: #f7faf8;
+  background: $bg;
   padding: 1rem;
 }
 .responsive {

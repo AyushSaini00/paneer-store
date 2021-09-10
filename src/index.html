@@ -8,7 +8,7 @@
   </head>
   <body>
     <nav>
-      <a href="#" class="logo-link">
+      <a href="/" class="logo-link">
         <img class="logo responsive" src="./assets/logo.svg" alt="logo" />
       </a>
       <form class="form">
@@ -37,7 +37,22 @@
         </button>
       </div>
     </nav>
-
+    <section class="sorting-section">
+      <form class="sort-by-rating">
+        <label for="rating">Sort by Rating :</label>
+        <select name="rating" id="rating">
+          <option value="High to Low">High to Low</option>
+          <option value="Low to High">Low to High</option>
+        </select>
+      </form>
+      <form class="sort-by-price">
+        <label for="price">Sort by Price :</label>
+        <select name="price" id="price">
+          <option value="High to Low">High to Low</option>
+          <option value="Low to High">Low to High</option>
+        </select>
+      </form>
+    </section>
     <main>
       <h1>Our Menu</h1>
       <div class="container"></div>
