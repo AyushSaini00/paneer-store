@@ -1,5 +1,4 @@
 import '../styles/main.scss';
-import Cart from './modals/Cart';
 import Search from './modals/Search';
 import { elements } from './views/domElements';
 import * as searchView from './views/searchView';
